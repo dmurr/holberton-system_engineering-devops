@@ -10,3 +10,12 @@
 
 5. Tail is used to read contents at the end of a file. 
 
+6. You can use the head and tail commands together to target a specific line in a file.
+
+7. 
+
+8. Direct output with > command 
+
+9. Use commands head/tail while >> (appending) to duplicate lines
+
+10.   
