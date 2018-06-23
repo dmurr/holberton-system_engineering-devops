@@ -1,1 +1,1 @@
-some text
+Using bash to file and directory permissions.

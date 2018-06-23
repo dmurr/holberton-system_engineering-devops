@@ -1,1 +1,1 @@
-Tasks involved learning various shell commands.
+Tasks involved learning basic shell commands.
