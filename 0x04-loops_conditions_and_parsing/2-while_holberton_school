@@ -3,5 +3,5 @@
 c=10
 while [ $c -gt 0 ] ; do
     echo "Holberton School"
-    c=$(($c-1))
+    c=$((c-1))
 done
