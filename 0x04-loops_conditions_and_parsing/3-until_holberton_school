@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Script that displays "Holberton School" 10 times using Until
 c=10
-until [ $c -lt 0 ]; do
+until [ $c -eq 0 ]; do
       echo "Holberton School"
       let c-=1
 done
