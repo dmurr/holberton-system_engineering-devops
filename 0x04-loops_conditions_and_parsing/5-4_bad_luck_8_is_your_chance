@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # "bad luck" on 4th iteration "good luck" on 8th, otherwise "Holberton School"
-c=0
+c=1
 while [ $c -lt 11 ]; do
     if [ $c -eq 4 ]; then
        echo "bad luck"
