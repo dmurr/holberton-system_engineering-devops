@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Displays content of current dir in list format
+for f in *; do
+   echo "$f" | cut -d "-" -f 2
+done
