@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+DEAD=$(pgrep -f 7-highlander)
+kill -SIGKILL $DEAD
