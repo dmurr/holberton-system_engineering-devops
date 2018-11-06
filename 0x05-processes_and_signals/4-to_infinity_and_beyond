@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# infinitely prints text in 2 sec intervals
 while true; do
       echo "To infinity and beyond"
       sleep 2

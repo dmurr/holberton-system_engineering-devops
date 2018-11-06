@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# greps process with name bash
 pgrep -l bash

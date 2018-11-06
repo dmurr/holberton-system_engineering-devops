@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# infinitely displays text in 2 sec intervals and traps SIGTERM
 while true; do
       echo "To infinity and beyond"
       sleep 2

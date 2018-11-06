@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-DEAD=$(pgrep -f 4-to_infinity_and_beyond)
-kill $DEAD
+# gets PID of specified file and terminates it
+GETPID=$(pgrep -f 4-to_infinity_and_beyond)
+kill $GETPID
