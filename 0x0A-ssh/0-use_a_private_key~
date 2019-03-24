@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# Connects via ssh to server and edits the authorized_keys file
-# If the .ssh directory does not exist, it creates it
-# If the authorized_keys file does not exist, it creates it.
-# By default does not add duplicate keys
-ssh-copy-id -i ~/.ssh/holberton ubuntu@35.237.76.108
