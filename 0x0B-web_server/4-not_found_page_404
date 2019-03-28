@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Installs nginx and configures with /redirect_me/ and 404 page
+apt-get -y update
+apt-get -y install nginx
+echo "Holberton School" | sudo tee /usr/share/nginx/html/index.html
+sed -i '30 i\ \tlocation /redirect_me/ {\n\t\treturn 301 google.com;\n\t}\n' /etc/nginx/sites-enabled/default
+echo "Ceci n'est pas une page" > /usr/share/nginx/html/error_page_404.html
+sed -i '30 i\ \terror_404 404 /error_page_404.html;\n\tlocation = /error_page_404.html {\n\t\troot /usr/share/nginx/html;\n\t\tinternal;\n\t}\n' /etc/nginx/sites-enabled/default
+service nginx restart
