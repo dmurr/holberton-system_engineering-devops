@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Bug Fix : Makes nginx to listen to port 80 instead of 8080
+sed -i '21,22s/8080/80/' /etc/nginx/sites-enabled/default
+service nginx restart
+service nginx stop
