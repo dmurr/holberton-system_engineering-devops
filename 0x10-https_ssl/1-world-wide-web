@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Takes domains and subdomains and returns record types and IP
+# shellcheck disable=SC2086
+
+domain_info() {
+
+    subdomains='www lb-01 web-01 web-02'
+
+    if [ "$#" == 1 ]; then
+	subdomains="$2"
+    fi
+
+    for sub in $subdomains; do
+	echo -n "The subdomain $sub"
+	dig "$sub.$1" | grep -A1 'ANSWER SECTION:' | tail -n1 | awk -F ' ' '{print " is a " $4 " record and points to " $5}'
+    done
+ 
+	
+}
+
+domain_info "$1" "$2"  
